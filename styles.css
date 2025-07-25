@@ -7,17 +7,23 @@
   font-family: Roboto, Arial;
 }
 
+.padding {
+  padding: 18px 10%;
+}
+
 .hero {
+  min-height: 500px;
   display: flex;
   flex-direction: column;
-  min-height: 450px;
   background-color: #1f2937;
 }
 
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
   padding: 10px 0;
 }
 
@@ -27,12 +33,15 @@
 }
 
 .nav {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  gap: 24px;
 }
 
 .link {
+  flex: 0 1 auto;
   text-decoration: none;
-  padding: 10px;
   color: #e5e7eb;
   font-size: 18px;
 }
@@ -40,20 +49,30 @@
 .hero-container {
   flex: 1;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0 20px;
+  justify-content: space-between;
+  align-items: stretch;
   flex-wrap: wrap;
+  gap: 24px;
+  padding: 60px 0;
 }
 
-.hero-content, img {
-  flex-basis: 400px;
+.hero-content, .hero-img {
+  flex: 1 1 300px;
+  display: flex;
+  max-width: 600px;
+  min-height: 275px;
 }
 
-img {
+.hero-img {
+  justify-content: center;
+  align-items: center;
   background-color: grey;
-  text-align: center;
-  height: 200px;
+}
+
+.hero-content {
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
 }
 
 .hero-title {
@@ -75,48 +94,51 @@ img {
   font-weight: 600;
   padding: 8px 24px;
   border-radius: 10px;
+  width: 120px;
 }
 
 /* info */
 
 .info {
-  text-align: center;
-  padding: 36px;
-  min-height: 400px;
+  min-height: 450px;
   display: flex;
   flex-direction: column;
 }
 
 .info-title {
+  text-align: center;
   font-size: 36px;
   color: #1f2937;
   font-weight: 900;
   margin-bottom: 24px;
 }
 
+.caption {
+  text-align: center;
+}
+
 .fig-container, figure {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .fig-container {
-  justify-content: space-evenly;
   flex-wrap: wrap;
   flex: 1;
-  gap: 8px;
+  gap: 50px;
 }
 
 figure {
   flex-direction: column;
-  justify-content: center;
-  flex-basis: 200px;
+  flex: 0 1 200px;
   color: #3f3f3f;
   font-size: 18px;
 }
 
 .fig-img-container {
-  height: 150px;
-  width: 150px;
+  height: 160px;
+  width: 160px;
   border: 3px solid #3882f6;
   border-radius: 15px;
   margin-bottom: 6px;

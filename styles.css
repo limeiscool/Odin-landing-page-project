@@ -253,3 +253,10 @@ figure {
   color: #3882f6;
   transform: scale(0.95);
 }
+
+.footer {
+  background-color: #1f2937;
+  color: #f9faf8;
+  text-align: center;
+  padding: 32px 0;
+}
